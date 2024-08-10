@@ -1,0 +1,25 @@
+{% if is_authenticated %}
+<h2>Hello {{name}} Who is {{age}} years old and{{Course_name}}</h2>
+{% else %}
+<h2>Hello User</h2>
+{% endif %}
+
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque
+  ratione modi nemo facere quasi velit possimus nulla deleniti perspiciatis.
+</p>
+<h2>List of objects</h2>
+<h2>First element---{{list.0}}</h2>
+<h2>All elements---{{list}}</h2>
+<h3>{{temp.x}}</h3>
+
+<h3>For loop demonstrations!!!</h3>
+{% for j in list %}
+<p>{{j}}</p>
+{% endfor %}
+
+<h2>filters:::</h2>
+<h3>First item:: {{list|first}}</h3>
+<h2>{{list|length}}</h2>
+{% comment %} hello, dont worry {% endcomment %} {% comment "first" %} First
+comment, testing {% endcomment %}
